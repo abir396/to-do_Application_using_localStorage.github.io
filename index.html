@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css" />
+    <script type="text/javascript" src="/js/main.js"></script>
+</head>
+<body>
+    <form id="new-task-form" name="myForm">
+        <header>
+            <h1>TO-DO Application 2023</h1>
+            <p>Designed by- Abir Pal (10/08/2023)</p>
+            <p><strong>You Can Add Your Daily Tasks</strong></p>
+            <hr>
+            <div>
+                <div class="row">
+
+                    <table id="barContainer">
+                      <tr>
+                        <td class="bartext">Task list</td>
+                        <td class="bar">
+                            <img src="/images/add-task-icon.png" alt="AddIcon" title="Add" style="width: 30px ; height: 30px;" onclick="showModal();">
+                        </td>
+                        <td>
+                            <img src="/images/delete-task-icon.png" alt="DeleteIcon"  title="Delete" style="width: 30px; height: 30px;" onclick="empty_storage();">
+                        </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </header>
+            <section class="task-list">
+                <div class="row">
+                      <table id="tableContainer">
+                        <tr>
+                            <td class="column">Sl.No.</td>
+                            <td class="column">Date</td>
+                            <td class="column">Task Title</td>
+                            <td class="column">Task Description</td>
+                            <td class="column">Completed</td>
+                            <td class="column">Edit</td>
+                            <td class="column">Delete</td>
+                        </tr>
+                      </table>
+                </div>
+            </section>
+            <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closeModal();">&times;</span>
+                <header>
+                    <p class="modal-header"> Manage Tasks</p>
+                </header>
+                <table style="width: 100%;">
+                    <tr>
+                        <td class="colitem"></td>
+                        <td class="colitem" style="text-align:right"><strong>Date :</td></strong>
+                        <td class="colitem"><input type="date" id ="new-task-date" placeholder="dd/mm/yyyy" name="task-date"></td>
+                        <td class ="colitem"></td>
+                    </tr>
+                    <tr>
+                       <td class="colitem" ></td>
+                       <td class="colitem" style="text-align: right;"><strong>Task Title :</strong></td>
+                       <td class="colitem"> <input type="text" id="new-task-input" placeholder="Enter task title" name="task" required/></td>
+                       <td class="colitem"></td>
+                   </tr>
+                   <tr>
+                       <td class="colitem" ></td>
+                       <td colitem style="text-align: right;"><strong>Task Description :</strong></td>
+                       <td class="colitem"><input type="text" id="new-task-description" placeholder="Enter task description" name="description" /></td>
+                       <td class="colitem"></td>
+                   </tr>
+                        <footer>
+                            <tr>
+                                <td class="colitem"></td>
+                                <td class="colitem" ></td>
+                                <td class="colitem">
+                                    <button type="submit" name="Save" value="submit" onclick="savetask(); return false;">Save</button>
+                                    <button type="reset" value="reset" onclick="Delete(count);">Delete</button>
+                                </td>
+                                <td class="colitem"></td>
+                            </tr>
+                        </footer>
+                </table>   
+            </div>
+        </div>
+    </form>
+</body>
+ <script type="text/javascript">
+    display_data();
+ </script>
+</html>
