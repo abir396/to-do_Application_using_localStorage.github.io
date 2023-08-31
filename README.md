@@ -4,7 +4,7 @@ You can save your daily task and that's are also complete, edit and delete.
 Description:
 Create a simple web-based to-do list application using HTML, CSS, and JavaScript. The application should allow users to add, delete, and mark tasks as completed.
 
-#CODE DETAILS----
+#CODE DETAILS :
 ---  HTML CODE  ---
 
 Head Section:
@@ -36,7 +36,7 @@ These buttons trigger the "savetask()" and "Delete(count)" functions respectivel
 Script Section:
 JavaScript code that invokes the "display_data()" function, likely responsible for populating the task list in the table.Overall, this code provides the structure for a TO-DO application with functionality for adding, editing, and deleting tasks using a modal popup for task entry and modification. The JavaScript functions are likely defined in the "main.js" file and would handle tasks like showing/hiding the modal, saving tasks, deleting tasks, and populating the task list. The CSS file "main.css" would style the application elements according to the design preferences.
 
-#CODE DETAILS----
+#CODE DETAILS :
 ---  JavaScript CODE  ---
 
 The provided JavaScript code contains various functions that handle the functionality of the TO-DO application. Let me explain the purpose of each function:
@@ -72,6 +72,8 @@ This function is called when the user clicks the "Delete" button in the header t
 
 Overall, these functions collectively manage the core functionality of the TO-DO application, including adding, editing, completing, and deleting tasks, as well as displaying the tasks in the table format.
 
+
+#CODE DETAILS :
 ---  CSS CODE  ---
 The provided CSS code defines the styling for various elements in your TO-DO application's interface. Let's go through each section to understand the styling choices:
 
