@@ -172,9 +172,9 @@ function display_data()
                 cell2.innerHTML = json[i].date;
                 cell3.innerHTML = json[i].name;
                 cell4.innerHTML = json[i].description;
-                cell5.innerHTML = "<img src='/images/complete.png' alt='Complete' title='Complete-task' style='width: 25px ; height: 25px;' onclick='Completed("+i+"); return false;'>";
-                cell6.innerHTML = "<img src='/images/edit.png' alt='Edit' title='Edit-task' style='width: 20px ; height: 20px;' onclick='Edit("+i+"); return false;'>";
-                cell7.innerHTML = "<img src='/images/delete.png' alt='Delete' title='Delete-task' style='width: 30px ; height: 30px;' onclick='Delete("+i+"); return false;'>";
+                cell5.innerHTML = "<img src='./images/complete.png' alt='Complete' title='Complete-task' style='width: 25px ; height: 25px;' onclick='Completed("+i+"); return false;'>";
+                cell6.innerHTML = "<img src='./images/edit.png' alt='Edit' title='Edit-task' style='width: 20px ; height: 20px;' onclick='Edit("+i+"); return false;'>";
+                cell7.innerHTML = "<img src='./images/delete.png' alt='Delete' title='Delete-task' style='width: 30px ; height: 30px;' onclick='Delete("+i+"); return false;'>";
 
                 var table1=document.getElementById('tableContainer').getElementsByTagName("tr");
                 if(json[i].status==1){
