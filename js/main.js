@@ -25,7 +25,7 @@ function blankcheck()
         var taskDesc = document.forms["new-task-form"]["description"].value;
     if (taskTitle == "")
     {
-        alert("Task must be filled out");
+        confirm("Task must be filled out");
         return false;
      }
      else 
@@ -37,7 +37,7 @@ function blankcheck()
 //comlete button function
 function Completed(count)
 {
-    alert("Task no : "+(count+1)+" is completed");
+    confirm("Task no : "+(count+1)+" is completed");
     var jsonVal = localStorage.getItem("jsondata");
     const json = JSON.parse(jsonVal);
     
@@ -54,7 +54,7 @@ function Completed(count)
 //Delete button function
 function Delete(count)
 {
-    alert("Are you sure to delete task no : "+(+count+1)+" ?");
+    confirm("Are you sure to delete task no : "+(+count+1)+" ?");
     var jsonVal = localStorage.getItem("jsondata");
     const json = JSON.parse(jsonVal);
     if (count > -1) { // only splice array when item is found
@@ -67,7 +67,7 @@ function Delete(count)
 //Edit button
 function Edit(count) 
 {
-    alert("Are you sure to delete task no : "+(count+1)+" ?");
+    confirm("Are you sure to delete task no : "+(count+1)+" ?");
     var jsonVal = localStorage.getItem("jsondata");
     const json = JSON.parse(jsonVal);
     showModal();
@@ -188,7 +188,7 @@ function display_data()
 //delete all data from local storage
 function empty_storage() 
 {
-    alert(" Are you sure to delete all data ?");
+    confirm(" Are you sure to delete all data ?");
     localStorage.clear();
     location.reload();
 }
